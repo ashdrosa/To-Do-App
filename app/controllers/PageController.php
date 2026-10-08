@@ -20,12 +20,6 @@ class PageController
 
     function dashboard()
     {
-        echo \Template::instance()->render('user_dashboard.html');
-    }
-
-    function create_user()
-    {
-        $f3 = \Base::instance();
-        $user = new User;
+        echo \Template::instance()->render('dashboard.html');
     }
 }

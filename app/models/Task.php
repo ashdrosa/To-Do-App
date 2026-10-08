@@ -9,10 +9,6 @@ class Task extends \DB\Cortex
             'nullable' => false
         ],
 
-        'task_owner' => [
-            'belongs-to-one' => 'User',
-        ],
-
         'date_created' => [
             'type' => \DB\SQL\Schema::DT_TIMESTAMP,
             'default' => \DB\SQL\Schema::DF_CURRENT_TIMESTAMP,
