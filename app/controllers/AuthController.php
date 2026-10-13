@@ -45,8 +45,9 @@
             if ($user->valid()) {
                 if ($user->password === $user_password) {
                     $f3->set('SESSION.user_id', $user->id);
-                    $f3->set('SESSION.user_email', $user->user_email);
+                    $f3->set('SESSION.user_email', $user->email);
                     $f3->set('SESSION.user_name', $user->username);
+                    $f3->set('SESSION.user_firstname', $user->firstname);
 
                     http_response_code(200);
                     echo json_encode([
