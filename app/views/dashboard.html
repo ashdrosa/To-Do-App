@@ -14,5 +14,15 @@
     <div class="user-info">
         <h1>Welcome, {{@SESSION.user_name}}</h1>
     </div>
+    <div class="list-management">
+        <h3> Currently Do not have an Active List</h3>
+        <button type="click" id="create-list">CREATE NEW LIST</button>
+        <form id="create-list-form" style="display: none;">
+            <input type="text" name="list_title" placeholder="List Title" id="new-list-name" required>
+            <button type="submit" id="submit-list">Create List</button>
+        </form>
+    </div>
+    <div id="to-do-lists"></div>
 </body>
+<script src="/includes/js/dashboard.js"></script>
 </html>
