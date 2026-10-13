@@ -22,7 +22,7 @@ class Task extends \DB\Cortex
         'task_completed' => [
             'type' => \DB\SQL\Schema::DT_BOOL,
             'nullable' => false,
-            'default' => false
+            'default' => 0
         ],
     ];
 
