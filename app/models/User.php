@@ -8,10 +8,6 @@ class User extends \DB\Cortex
             'type' => \DB\SQL\Schema::DT_VARCHAR256,
             'nullable' => false
         ],
-        'lastname' => [
-            'type' => \DB\SQL\Schema::DT_VARCHAR256,
-            'nullable' => false
-        ],
 
         'username' => [
             'type' => \DB\SQL\Schema::DT_VARCHAR256,

@@ -8,17 +8,27 @@
 <body>
   <form id="register-form">
     <label>
+        First Name:
+        <input type="text" id="first-name" name="firstname" placeholder="first name" required>
+    </label>
+    <label>
         Username:
         <input type="text" id="username" name="username" placeholder="username" required>
+    </label>
+    <label>
+        Email:
+        <input type="email" id="email" name="email" placeholder="email" required>
     </label>
     <label>
         Password:
         <input type="password" id="password" name="password" placeholder="password" required>
     </label>
-    <button type="click" id="submit-register">Register</button>
+    <button type="submit" id="submit-register">Register</button>
 
 
   </form>
     
 </body>
+
+<script src="/includes/js/register.js"></script>
 </html>
