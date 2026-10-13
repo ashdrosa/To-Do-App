@@ -5,6 +5,7 @@ $f3 = \Base::instance();
 $f3->config('app/config/config.ini');
 $f3->config('app/config/routes.ini');
 $f3->config('app/config/db.ini');
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_USER_NOTICE);
 
 [$host, $port] = explode(':', $f3->get('DB_HOST'));
 
