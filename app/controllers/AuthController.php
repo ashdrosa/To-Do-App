@@ -15,13 +15,13 @@
             $user->password = $f3->get('POST.password');
 
             if ($user->save()) {
-                echo http_response_code(201);
+                http_response_code(201);
                 echo json_encode([
                     'success' => true,
                     'message' => 'User created successfully'
                 ]);
             } else {
-                echo http_response_code(400);
+                http_response_code(400);
                 echo json_encode([
                     'success' => false,
                     'message' => 'Failed to create user'

@@ -15,4 +15,16 @@ submit_Btn.addEventListener('click', async (e) => {
         method: "POST",
         body: formData
     });
+
+    if (response.ok) {
+        const data = await response.json();
+        console.log('User registered successfully:', data);
+        // Redirect to login page after successful registration
+        window.location.href = '/login'; 
+    } else {
+        const errorData = await response.json();
+        console.error('Error registering user:', errorData);
+        // Handle error (e.g., display error message to the user)
+    }
+
 });
