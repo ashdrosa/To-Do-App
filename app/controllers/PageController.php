@@ -20,6 +20,13 @@ class PageController
 
     function dashboard()
     {
+
+        $f3 = \Base::instance();
+        if (!$f3->exists('SESSION.user_id')) {
+            $f3->reroute('/login');
+            return;
+        }
+
         echo \Template::instance()->render('dashboard.html');
     }
 }
